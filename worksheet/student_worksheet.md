@@ -77,17 +77,13 @@ Formulas: `|e| = √((x − x_t)² + (y − y_t)²)` · `new scale = old scale �
 **Graph:** x-axis = trial number (1, 2, 3 …), y-axis = error in metres. Draw a horizontal line
 at your tolerance.
 
-```
-error (m)
- |
- |__
- |   __________________________________
- |  /
- | /
- |/
- +-------------------------------------------> trial
-   1    2    3    4    5
-```
+
+
+
+
+
+
+
 
 **Conclusion (4 sentences):**
 
