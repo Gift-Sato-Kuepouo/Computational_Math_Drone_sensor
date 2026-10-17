@@ -81,23 +81,7 @@ The Pololu QTR family has an official Arduino library if you prefer it over raw 
 The package = **sensor + tiny logger board + its own small battery**, strapped under the belly.
 It records continuously and prints/downloads a CSV after landing.
 
-```
-        ┌─────────────────────────── Eagle 125F belly ───────────────────────────┐
-        │   foam tape pad                                                        │
-        │      ┌───────────────┐   thin 30 AWG wires, strain-relieved            │
-        │      │ XIAO nRF52840 │───────────────┬─────────────┐                   │
-        │      │   Sense (4g)  │               │             │                   │
-        │      └───────┬───────┘          ┌────▼────┐   ┌────▼─────┐             │
-        │              │                  │ QTR-1A  │   │ 1S LiPo  │             │
-        │              └── A0 ────────────│ OUT     │   │ 250 mAh  │             │
-        │                 GND ────────────│ GND     │   │ (~5 g)   │             │
-        │                 3V3 ────────────│ VIN     │   └──────────┘             │
-        │                                 └────┬────┘                             │
-        └──────────────────────────────────────│──────────────────────────────────┘
-                                          faces the floor
-                                     (mounted flat, parallel,
-                                      at the lowest frame point)
-```
+![Sensor package mounted under the Eagle 125F: XIAO nRF52840 Sense logger, QTR-1A reflectance sensor facing the floor, and 1S LiPo battery](images/sensor-package.png)
 
 **Payload-free variant (Track B):** the drone flies with **nothing attached**. Immediately after
 touchdown the student places the sensor package flat on the floor **at the drone's centre mark**
