@@ -77,14 +77,12 @@ Formulas: `|e| = √((x − x_t)² + (y − y_t)²)` · `new scale = old scale �
 **Graph:** x-axis = trial number (1, 2, 3 …), y-axis = error in metres. Draw a horizontal line
 at your tolerance.
 
-
-
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
 **Conclusion (4 sentences):**
 
 1. How many trials until `|e|` ≤ tolerance? ______________________________
