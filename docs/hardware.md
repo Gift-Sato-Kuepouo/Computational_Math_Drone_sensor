@@ -14,7 +14,7 @@ Verified from the manufacturer's product page ([whalesbot.ai/product/eagle-125f]
 
 | Spec | Value |
 |---|---|
-| Price | ≈ **$71 USD** |
+| Price |  **$71 USD** |
 | Age range | **6+** |
 | Positioning | "The Soccer Drone Built for Active Classrooms" — recommended kit for the **Drone Cup of ENJOY AI 2026** |
 | Flight controller | **ARM Cortex-M0, 80 MHz, 64 KB flash, 8 KB SRAM** |
