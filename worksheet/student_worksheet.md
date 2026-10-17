@@ -59,13 +59,8 @@ Sensor at **flight/landing height**, same lighting as the flight area, average o
 Press `z` (reset line counter) before every flight. After landing wait 2 s, then read the shade
 and press `p`.
 
-| Trial | Scale sent | Lines crossed → measured distance (m) | Predicted distance (m) | Landing shade / measured (x, y) | Error `|e|` (m) | Pass? (≤ tol) | New scale = old × (target ÷ measured) |
-|---|---|---|---|---|---|---|---|
-| 1 | 1.000 | | | | | | |
-| 2 | | | | | | | |
-| 3 | | | | | | | |
-| 4 | | | | | | | |
-| 5 | | | | | | | |
+| Trial | Scale sent | Lines crossed → measured distance (m) | Predicted distance (m) | Landing shade / measured (x, y) | Error `|e|` (m) | Pass? (≤ tol) | New scale = old × (target ÷ measured) 
+
 
 Formulas: `|e| = √((x − x_t)² + (y − y_t)²)` · `new scale = old scale × (target distance ÷ measured distance)`
 
