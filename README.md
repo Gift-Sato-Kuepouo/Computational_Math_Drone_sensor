@@ -1,4 +1,4 @@
-# Computational Math × Drone Sensor — a K–12 initiative
+# Computational Math & Drone Sensor a K–12 initiative
 
 An independent project for K–12 initiative (core: grades 5–8) to implement a real-life
 mathematical simulation with the Eagle 125F drone and a little light sensor attached to it.
@@ -45,8 +45,6 @@ buying anything.
 | **Onboard logger** | **Seeed XIAO nRF52840 Sense** (≈ 4 g bare) | 12-bit ADC, Bluetooth LE, LiPo charger, thumb-sized — the whole sensor package stays near 10 g. |
 | **Payload-free track** | Same sensor + board, kept on the ground | If the drone cannot lift the package, the sensor reads the landing square *after* touchdown. Zero payload, same data. |
 
-> **Check your drone first.** Many consumer education drones don't accept add-on sensors, so
-> verify yours does. The sensor must be light enough for the drone to lift — confirm the payload
 > limit with the hover test in [docs/hardware.md](docs/hardware.md) before every flight session.
 
 ## Repository layout
