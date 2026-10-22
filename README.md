@@ -12,12 +12,12 @@ eyeballing it**, and iterate until the drone lands inside the tolerance.
 
 ## The four steps (every team, every grade band)
 
-1. **Start point and three targets** — each team gets coordinates on the 5×5 grid.
-2. **Calculate and code** — students find the distances and headings by hand, then write the
+1. **Start point and three targets** : each team gets coordinates on the 5×5 grid.
+2. **Calculate and code** : students find the distances and headings by hand, then write the
    flight commands (`d = √(Δx² + Δy²)`, `θ = atan2(Δy, Δx)`, `t = d ÷ v`).
-3. **Fly and verify** — the drone logs line crossings and the landing shade, and students
+3. **Fly and verify** : the drone logs line crossings and the landing shade, and students
    record the measured landing point and compute the error `|e| = √(ex² + ey²)`.
-4. **Adjust and repeat** — apply `new scale = old scale × (target distance ÷ measured distance)`
+4. **Adjust and repeat** : apply `new scale = old scale × (target distance ÷ measured distance)`
    and fly again until `|e| ≤ 0.25 m`, then graph error against trial number.
 
 The math behind every step is in [docs/math-model.md](docs/math-model.md).
@@ -44,29 +44,7 @@ buying anything.
 | **Light sensor** | **Pololu QTR-1A reflectance sensor (2-pack, item #2458)** | Own IR emitter + phototransistor, so room lighting matters less; tiny (12.7 × 7.6 mm, ≈ 0.2 g), analog output for the linear-fit exercise. |
 | **Onboard logger** | **Seeed XIAO nRF52840 Sense** (≈ 4 g bare) | 12-bit ADC, Bluetooth LE, LiPo charger, thumb-sized — the whole sensor package stays near 10 g. |
 | **Payload-free track** | Same sensor + board, kept on the ground | If the drone cannot lift the package, the sensor reads the landing square *after* touchdown. Zero payload, same data. |
-
-> limit with the hover test in [docs/hardware.md](docs/hardware.md) before every flight session.
-
-## Repository layout
-
-```
-├── README.md                    ← you are here
-├── ROADMAP.md                   ← K–12 initiative phases & room for development
-├── docs/
-│   ├── hardware.md              ← platform + sensor BOM, wiring, mounting, floor setup
-│   ├── math-model.md            ← formulas, worked example, why the correction works
-│   ├── lesson-plan.md           ← 4-step flow, grade bands K–4 / 5–8 / 9–12, safety
-│   └── verification.md          ← line counting, landing shade, gradient calibration
-├── code/
-│   ├── simulation.py            ← run the model before flying (stdlib only)
-│   ├── calibrate_gradient.py    ← fit position = a × reading + b
-│   └── sensor_logger/
-│       ├── sensor_logger.ino    ← Arduino sketch: line counter + shade classifier (CSV)
-│       └── README.md            ← wiring, serial commands, log format
-└── worksheet/
-    ├── student_worksheet.md     ← handout: calculations, data tables, error graph
-    └── *_template.csv           ← trial log & calibration templates
-```
+limit with the hover test in [docs/hardware.md](docs/hardware.md) before every flight session.
 
 ## Quick start (no hardware needed)
 
